@@ -11,7 +11,7 @@ Unintended solution: answer leak in file name.
 ## Challenge Description
 Accessing the URL given by the challenge, we are greeted with a fingerprint and are prompted to determine if it's a male or female fingerprint.
 
-![Fingerprint Image](https://i.imgur.com/EFo6c01.png)
+<img src="https://i.imgur.com/EFo6c01.png" alt="Fingerprint Image" width="300"/>
 
 ## Solution
 The intended solution was to train a model to classify fingerprints. However, if you right-click the image and open it in a new tab, it will download a file that contains the gender the fingerprint belongs to.

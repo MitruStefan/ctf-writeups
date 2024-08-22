@@ -1,4 +1,4 @@
-# Rubies
+# rubies
 
 > **Category**: Web
 > **Author**: Stefan
@@ -9,9 +9,9 @@ Exploiting CVE-2019-5418
 ---
 
 ## Challenge Description
-The challenge name was "rubies," and we had an image with a ruby. The website title, when base64 decoded, was "rails." Clicking on the image brought me to `/vuln` and returned a 500 server error.
+The challenge name was "rubies" and we had an image with a ruby. The website title, when base64 decoded, was "rails". Clicking on the image brought me to `/vuln` and returned a 500 server error.
 
-![Writeup_image_1](https://i.imgur.com/G3dmPpJ.png)
+<img src="https://i.imgur.com/G3dmPpJ.png" alt="Writeup_image_1" width="400"/>
 
 ## Solution
 ### Step 1: Identifying the CVE
@@ -20,14 +20,14 @@ After some investigation, I looked through the CVEs for Ruby on Rails on cvedeta
 ### Step 2: Exploiting the Vulnerability
 The vulnerable path was `/vuln`, and we found the [CVE-2019-5418 GitHub repository](https://github.com/mpgn/CVE-2019-5418). By changing the `Accept` header, we could retrieve files from the server.
 
-![Writeup_image_2](https://i.imgur.com/MIHu9dr.png)
+<img src="https://i.imgur.com/MIHu9dr.png" alt="Writeup_image_2" width="700"/>
 
 ### Step 3: Finding the Flag
 To identify the flag file path, I first looked into `/etc/passwd`, as the CVE example did. There, I found a user named "gem" with a corresponding home directory, suggesting that the flag might be in that directory.
 
 The payload I used was `../../../../../../../home/gem/flag.txt{{`.
 
-![Writeup_image_3](https://i.imgur.com/y06p0rb.png)
+<img src="https://i.imgur.com/y06p0rb.png" alt="Writeup_image_3" width="800"/>
 
 ## Script
 ```python

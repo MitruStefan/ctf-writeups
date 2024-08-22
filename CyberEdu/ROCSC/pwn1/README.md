@@ -11,7 +11,7 @@ A relatively simple Leak2Libc.
 ## Challenge Description
 Upon opening the challenge in Ghidra, we had a simple `gets()` and a `puts()` with user input. The goal was to leak the libc address and then use it to get a shell. The buffer was 128 characters long, and I encountered the first problem here:
 
-![Writeup_image_1](https://i.imgur.com/1R2SXOz.png)
+<img src="https://i.imgur.com/1R2SXOz.png" alt="Writeup_image_1" width="500"/>
 
 ## Solution
 ### Step 1: Identifying the Correct Offset
@@ -19,20 +19,20 @@ I initially took the offset from RBP, but I should have looked at the disassembl
 
 > **Note**: The RSP register contained the same string as RIP because the main function ended with `leave ret` (function epilogue).
 
-![Writeup_image_2](https://i.imgur.com/0lhtOWs.png)
+<img src="https://i.imgur.com/0lhtOWs.png" alt="Writeup_image_2" width="500"/>
 
 ### Step 2: Fixing the Leak
 ~~The second issue was that the leak only worked remotely when using `gets` (I'm not sure why).~~
 ~~As a result, I also had to change the calculation of `libc_base` to use `gets`.~~
 
-![Writeup_image_3](https://i.imgur.com/sITr0BE.png)
+<img src="https://i.imgur.com/sITr0BE.png" alt="Writeup_image_3" width="200"/>
 
 The issue was the usage of `strip()`, which removed the last byte. Changing to `strip(b'\n')` fixed this.
 
 ### Step 3: Running the Exploit
 With the final exploit file, I ran the solve script with the `r` argument and we got a shell.
 
-![Writeup_image_4](https://i.imgur.com/lPsXMez.png)
+<img src="https://i.imgur.com/lPsXMez.png" alt="Writeup_image_4" width="500"/>
 
 ## Exploit
 ```python
