@@ -1,6 +1,6 @@
 # rubies
 
-> **Category**: Web
+> **Category**: Web\
 > **Author**: Stefan
 
 ## TL;DR

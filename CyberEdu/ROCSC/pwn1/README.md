@@ -1,6 +1,6 @@
 # pwn1
 
-> **Category**: Pwn
+> **Category**: Pwn\
 > **Author**: Stefan
 
 ## TL;DR
