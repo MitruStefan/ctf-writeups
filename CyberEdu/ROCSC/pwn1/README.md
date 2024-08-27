@@ -1,4 +1,4 @@
-# pwn1
+# pwn1 Challenge Writeup
 
 > **Category**: Pwn\
 > **Author**: Stefan

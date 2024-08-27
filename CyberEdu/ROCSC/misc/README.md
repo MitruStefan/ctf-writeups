@@ -1,4 +1,4 @@
-# misc
+# misc Challenge Writeup
 
 > **Category**: Misc\
 > **Author**: Stefan
