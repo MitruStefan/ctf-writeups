@@ -13,7 +13,7 @@ This repository contains my collection of CTF (Capture The Flag) writeups that I
   - [pwn1](CyberEdu/ROCSC/pwn1/README.md)
   - [rubies](CyberEdu/ROCSC/rubies/README.md)
 
-### SEKAI CTF 2024
+### SekaiCTF 2024
 
 - [Crack Me](SEKAI%20CTF%202024/Crack%20Me/README.md)
 
