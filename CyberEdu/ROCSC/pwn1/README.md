@@ -4,7 +4,7 @@
 > **Author**: Stefan
 
 ## TL;DR
-A relatively simple Leak2Libc.
+A relatively simple ret2libc.
 
 ---
 
