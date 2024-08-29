@@ -1,4 +1,4 @@
-# El Picasso Challenge Writeup
+# el-picasso Challenge Writeup
 
 > **Category**: Rev\
 > **Author**: Stefan
