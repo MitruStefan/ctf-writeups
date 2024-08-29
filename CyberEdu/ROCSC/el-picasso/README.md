@@ -40,7 +40,7 @@ However, the output is mostly gibberish and the decompiler doesn't work. Switchi
 <img src="https://i.imgur.com/Xre1tNQ.png" alt="IDA Free Warning" width="500"/>
 
 ### Step 3: Investigating the Disassembly
-Upon further investigation, we find that the code is a mess. Googling `ctf vfmaddsub132ps` leads us to a presentation from [DEF CON 23](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEF%20CON%2023%20-%20Chris-Domas-REpsych.pdf), which mentions that this instruction, among others, can be used to "psychologically torment" reverse engineers.
+Upon further investigation, we find that the code is a mess. Googling `ctf vfmaddsub132ps` leads us to a presentation from [DEF CON 23](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEF%20CON%2023%20-%20Chris-Domas-REpsych.pdf), which mentions that this instruction, among others, can be used to "psychologically torment" reverse engineers by creating images in the graph view.
 
 ### Step 4: Decoding the QR Code
 By changing the maximum graph limit in IDA Free, we reveal a graph that resembles a QR code.
