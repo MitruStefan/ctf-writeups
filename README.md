@@ -8,10 +8,12 @@ This repository contains my collection of CTF (Capture The Flag) writeups that I
 
 - **ROCSC**
   - [cargo](CyberEdu/ROCSC/cargo/README.md)
+  - [el-picasso](CyberEdu/ROCSC/el-picasso/README.md)
   - [misc](CyberEdu/ROCSC/misc/README.md)
   - [old-tickets](CyberEdu/ROCSC/old-tickets/README.md)
   - [pwn1](CyberEdu/ROCSC/pwn1/README.md)
   - [rubies](CyberEdu/ROCSC/rubies/README.md)
+  - [secure-notekeeper](CyberEdu/ROCSC/secure-notekeeper/README.md)
 
 ### SekaiCTF 2024
 
