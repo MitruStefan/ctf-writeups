@@ -17,7 +17,7 @@ This repository contains my collection of CTF (Capture The Flag) writeups that I
 
 ### SekaiCTF 2024
 
-- [Crack Me](SEKAI%20CTF%202024/Crack%20Me/README.md)
+- [Crack Me](SekaiCTF%202024/Crack%20Me/README.md)
 
 ## Description
 
